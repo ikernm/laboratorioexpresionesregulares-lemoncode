@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <script type="module" src="/src/main.ts" defer></script>
   </head>
-  <body>
-    <div id="app">
-      <h1>TypeScript Sandbox</h1>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
+
+  <body>  
+    <section class="IBAN-data">
+      <h1>Introduzca el IBAN</h1>
+        <form>
+          <input id="IBAN-text" type="text" placeholder="IBAN" maxlength="26" required>
+          <button class="search" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+              stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" />
+            </svg>
+          </button>
+        </form>
+    </section>
+    <section class="IBAN-details">
+      <p class="IBAN-confirmation"></p>
+      <p class="IBAN-validation"></p>
+      <p class="IBAN-bank"></p>
+      <p class="IBAN-branch"></p>
+      <p class="IBAN-control"></p>
+      <p class="IBAN-account"></p>
+    </section>
   </body>
+
 </html>
