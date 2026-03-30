@@ -6,14 +6,15 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
-    <script type="module" src="/src/main.ts" defer></script>
+    <script type="module" src="/src/apartadoB.ts" defer></script>
   </head>
 
   <body>  
-    <section class="IBAN-data">
-      <h1>Introduzca el IBAN</h1>
-        <form id="IBAN-form">
-          <input id="IBAN-text" type="text" placeholder="IBAN" required>
+
+    <section class="img-data">
+      <h1>Pegue el HTML:</h1>
+        <form id="img-form">
+          <textarea id="img-text" rows="10" cols="50" placeholder="Escribe aquí tu HTML" required></textarea>
           <button class="btn-search" type="submit">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
               stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -22,18 +23,15 @@
           </button>
         </form>
     </section>
-    <section class="IBAN-details">
-      <p class="IBAN-confirmation"></p>
-      <p class="IBAN-validation"></p>
-      <p class="IBAN-bank"></p>
-      <p class="IBAN-branch"></p>
-      <p class="IBAN-control"></p>
-      <p class="IBAN-account"></p>
+
+    <section class="img-details">
+      <div class="container-img"></div>
     </section>
 
-    <button onclick="window.location.href='./src/apartadoB.html'">
-      Apartado B
+    <button onclick="window.location.href='../index.html'">
+      Apartado A
     </button>
+
   </body>
 
 </html>
