@@ -17,11 +17,6 @@ const IBANaccount = document.querySelector(".IBAN-account") as HTMLParagraphElem
 const IBAN = /^(?<countryCode>[A-Za-z]{2})(?<controlCodeIBAN>\d{2})\s?\-?(?<bankCode>\d{4})\s?\-?(?<branchCode>\d{4})\s?\-?(?<controlCodeAccount>\d{2})\s?\-?(?<accountCode>\d{10})$/;
 /*const ibantools = require('ibantools');*/
 
-export const validateIBANtest = (value:string):boolean => {
-    const IBANv2 = /^(?<countryCode>[A-Za-z]{2})(?<controlCodeIBAN>\d{2})\s?\-?(?<bankCode>\d{4})\s?\-?(?<branchCode>\d{4})\s?\-?(?<controlCodeAccount>\d{2})\s?\-?(?<accountCode>\d{10})$/;
-    return IBANv2.test(value);
-} 
-
 // Nombres de bancos
 
 const banco: Record<string, string> = {
